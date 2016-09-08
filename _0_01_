@@ -1,0 +1,20 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 07.09.2016.
+ */
+public class _0_01_ {
+    public static  void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int t;
+        System.out.println("Enter time: ");
+        t = sc.nextInt();
+        if ( t >= 9 && t <= 18){
+            System.out.println("I am at work");
+        } else {
+            System.out.println("I rest");
+        }
+    }
+}
