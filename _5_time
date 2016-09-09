@@ -1,0 +1,22 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _5_time {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int speed;
+        int distance;
+        System.out.println("Enter speed: ");
+        speed = sc.nextInt();
+        System.out.println("Enter distance: ");
+        distance = sc.nextInt();
+
+        float time = distance/speed;
+        System.out.println("time equel: " + time);
+
+    }
+}
