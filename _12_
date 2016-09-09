@@ -1,0 +1,33 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _12_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        int b;
+        int c;
+        System.out.println("Enter number a: ");
+        a = sc.nextInt();
+        System.out.println("Enter number b: ");
+        b = sc.nextInt();
+        System.out.println("Enter number c: ");
+        c = sc.nextInt();
+
+        if ((a + b + c) > 0){
+            System.out.println(a*2);
+            System.out.println(b*2);
+            System.out.println(c*2);
+
+        }else {
+            System.out.println(a == 0);
+            System.out.println(b == 0);
+            System.out.println(c == 0);
+        }
+
+    }
+}
