@@ -1,0 +1,27 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _3_ {
+public  static  void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int a;
+    int b;
+    System.out.println("Enter the first speed (km/h): ");
+    a = sc.nextInt();
+    System.out.println("Enter the second speed (m/s): ");
+    b = sc.nextInt();
+    int c = ((a * 1000)/3600);
+
+    if(a > b){
+        System.out.println("a > b");
+    }else {
+        System.out.println("b > a");
+    }
+
+
+}
+}
