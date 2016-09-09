@@ -1,0 +1,30 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _8_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int Height;
+        int Weight;
+        System.out.println("Enter your height: ");
+        Height = sc.nextInt();
+        System.out.println("Enter your weight: ");
+        Weight = sc.nextInt();
+
+        int IdealWeight = (Height - 100);
+
+        if (Weight > IdealWeight){
+            System.out.println("You need to lose weight!");
+        }
+        if (Weight < IdealWeight){
+            System.out.println("You need to gain weight!");
+        }else {
+            System.out.println("You have the ideal weight!");
+        }
+    }
+    ;
+}
