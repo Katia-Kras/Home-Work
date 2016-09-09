@@ -1,0 +1,31 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _6_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        System.out.println("Enter a number from 1 to 12: ");
+        a = sc.nextInt();
+
+        if ((a == 12)||(a == 1)|| (a ==2)){
+            System.out.println("It is winter!");
+        }
+       else if ((a >= 3)&& (a <= 5)){
+            System.out.println("It is spring!");
+        }
+       else if ((a >= 6)&& (a <= 8)){
+            System.out.println("It is summer!");
+        }
+       else if ((a >= 9)&& (a <= 11)){
+            System.out.println("It is autumn!");
+        }else {
+            System.out.println("You made a mistake!");
+        }
+
+    }
+}
