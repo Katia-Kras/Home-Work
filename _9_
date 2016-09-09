@@ -1,0 +1,32 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _9_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int DayOfTheWeek;
+        int TheCostOfTheNegotiations;
+        int CallDuration;
+        System.out.println("Enter the day of the week: ");
+        DayOfTheWeek = sc.nextInt();
+        System.out.println("Enter the cost of the negotiations: ");
+        TheCostOfTheNegotiations = sc.nextInt();
+        System.out.println("Enter the duration of the call: ");
+        CallDuration = sc.nextInt();
+
+        int c = CallDuration * TheCostOfTheNegotiations;
+        int d = c - ((c * 10)/100);
+        if ((DayOfTheWeek<= 5)&&(DayOfTheWeek >= 1)){
+            System.out.println("You have to pay:" + c + "UAH" );
+        }
+        if ((DayOfTheWeek<= 7)&&(DayOfTheWeek >= 6)){
+            System.out.println("You have to pay: " + d + "UAH");
+        }else {
+            System.out.println("This day of the week does not exist!");
+        }
+    }
+}
