@@ -1,0 +1,22 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _7_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int TheCost;
+        System.out.println("Enter the purchase price: ");
+        TheCost = sc.nextInt();
+        int TheFinalPrice = (TheCost - ((TheCost*10)/100));
+        if (TheCost > 1000){
+            System.out.println("You have a 10% discount. You have to pay: " + TheFinalPrice);
+        }else {
+            System.out.println("You don't have discounts");
+        }
+
+    }
+}
