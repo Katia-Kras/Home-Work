@@ -1,0 +1,27 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _4_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        int b;
+        int c;
+        System.out.println("Enter 1-st number: ");
+        a = sc.nextInt();
+        System.out.println("Enter 2-nd number: ");
+        b = sc.nextInt();
+        System.out.println("Enter 3-rd number: ");
+        c = sc.nextInt();
+        if ((a == b)||(a == c)||(c == b)){
+            System.out.println(" Has a pair of equal numbers!");
+        }else {
+            System.out.println(" No equal numbers!");
+        }
+
+    }
+}
