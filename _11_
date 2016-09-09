@@ -1,0 +1,29 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _11_ {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int WindSpeed;
+        System.out.println("Enter the wind speed^");
+        WindSpeed = sc.nextInt();
+
+        if ((WindSpeed >= 1)&&(WindSpeed <= 4)){
+            System.out.println("Weak wind!");
+        }
+        else if ((WindSpeed >= 5)&& (WindSpeed <= 10)){
+            System.out.println("Moderate wind");
+        }
+        else if ((WindSpeed >= 11)&& (WindSpeed <= 18)){
+            System.out.println("A strong wind");
+        }else {
+            System.out.println("Hurricane wind");
+        }
+
+    }
+
+}
