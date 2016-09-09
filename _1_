@@ -1,0 +1,37 @@
+package week1.home_work;
+
+import java.util.Scanner;
+
+/**
+ * Created by Kat on 09.09.2016.
+ */
+public class _1_ {
+    public static  void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a;
+        int b;
+        int c;
+        System.out.println("Enter number a: ");
+        a = sc.nextInt();
+        System.out.println("Enter number b: ");
+        b = sc.nextInt();
+        System.out.println("Enter number c: ");
+        c = sc.nextInt();
+
+        if (a > 0){
+            System.out.println("a^3 = " + (a*a*a));
+        }else{
+            System.out.println(" 0 ");
+        }
+          if ( b > 0){
+              System.out.println("b^3 = " + (b*b*b));
+          }else {
+              System.out.println(" 0 ");
+          }
+             if (c > 0){
+                 System.out.println("c^3 =" + (c*c*c));
+             }else {
+                 System.out.println(" 0 ");
+             }
+    }
+}
